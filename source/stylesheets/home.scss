@@ -139,7 +139,7 @@
 
     &:before {
       position: absolute;
-      opacity: 0.3;
+      opacity: 0;
       content: '';
       background: linear-gradient(120deg, $purple-light, transparent),
       linear-gradient(180deg,transparent, black);
@@ -153,28 +153,29 @@
     }
 
     &:hover::before {
-      opacity: 0.1;
+      opacity: 0.3;
     }
 
   }
 
-  .work-panel.work-real-time {
-    background-image: image-url("earth2.jpg");
+  .work-panel.work-robotics {
+    background-image: image-url("robot.jpg");
   }
 
-  .work-panel.work-simple {
+  .work-panel.work-real-time {
     background-image: image-url("phone.jpg");
   }
 
-  .work-panel.work-robotics {
+  .work-panel.work-android {
+    background-image: image-url("drone1.jpg");
+
+  }
+
+  .work-panel.work-simple {
     background-image: image-url("robotics.jpg");
     background-position: right;
   }
 
-  .work-panel.work-android {
-    background-image: image-url("drone.jpg");
-    background-position: top right;
-  }
 
   .area {
     width: 90%;
@@ -188,30 +189,30 @@
     margin-bottom: -0.750em;
 
     .detail-bg-robotics {
-      background: url('/images/robotics.jpg');
+      background: url('/images/robot.jpg');
       background-size: cover;
       background-position: center;
       height: 20em;
     }
 
     .detail-bg-web {
-      background: url('/images/earth2.jpg');
+      background: url('/images/phone.jpg');
       background-size: cover;
-      background-position: center;
+      background-position: 0 18%;
       height: 20em;
     }
 
     .detail-bg-embedded {
-      background: url('/images/drone.jpg');
+      background: url('/images/drone1.jpg');
       background-size: cover;
       background-position: 0 60%;
       height: 20em;
     }
 
     .detail-bg-user {
-      background: url('/images/phone.jpg');
+      background: url('/images/robotics.jpg');
       background-size: cover;
-      background-position: 0 18%;
+      background-position: center;
       height: 20em;
     }
 
